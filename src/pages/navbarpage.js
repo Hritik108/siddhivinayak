@@ -5,7 +5,7 @@ import "../assets/css/navbar.css";
 class NavbarPage extends React.Component {
   render() {
     return (
-      <div className="Navbar-main">
+      <div className="">
         <Navbar />
       </div>
     );

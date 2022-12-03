@@ -1,4 +1,4 @@
-nav{
+.navbar-main{
     padding : 0% 10%;
     display: flex;
     height: 80px;
@@ -15,17 +15,44 @@ nav{
     
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap : 2rem;
+.circle {
+    width: 7px;
+    height: 7px;
+    border: 100px;
+    border-radius: 50%;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    transition: 1s;
 }
 
-nav ul li{
+ul{
+    list-style: none;
+}
+.navbar-main ul {
+    display: flex;
+    gap : 2rem;
+    
+}
+
+.navbar-main ul li a{
+    transition: 1s;
+}
+
+.navbar-main ul li a:hover{
+    color: red;
+}
+
+.navbar-main ul li{
     font-size: 1.3rem;
 }
 
 a{
     text-decoration: none;
     color: black;
+}
+
+.navbar-mobile{
+   width: 30%;
+   background-color: red;
 }
