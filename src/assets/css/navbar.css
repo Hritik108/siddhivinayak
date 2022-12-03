@@ -11,17 +11,17 @@ nav{
     color: red;
     transition: 1s;
     z-index: 10;
+    justify-content: space-between;
     
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    margin-left: auto;
+    gap : 2rem;
 }
 
 nav ul li{
-    margin-left: 20px;
     font-size: 1.3rem;
 }
 
