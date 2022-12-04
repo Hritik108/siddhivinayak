@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/css/navbar.css";
-import jQuery from "jquery";
+// import jQuery from "jquery";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -46,10 +46,6 @@ class Navbar extends React.Component {
     this.setState({ isResponsive });
   }
 
-  On_hover(e) {
-    jQuery(".circle").css({ backgroundColor: e });
-  }
-
   render() {
     const { isResponsive } = this.state;
 
@@ -61,49 +57,25 @@ class Navbar extends React.Component {
           </div>
           <ul>
             <li>
-              <a
-                onMouseEnter={() => this.On_hover("red")}
-                onMouseLeave={() => this.On_hover("black")}
-                href="/home"
-              >
-                Home
-              </a>
+              <a href="/home">Home</a>
               <div
                 className={this.state.active == "home" ? "circle" : ""}
               ></div>
             </li>
             <li>
-              <a
-                onMouseEnter={() => this.On_hover("red")}
-                onMouseLeave={() => this.On_hover("black")}
-                href="/courses"
-              >
-                Courses
-              </a>
+              <a href="/courses">Courses</a>
               <div
                 className={this.state.active == "courses" ? "circle" : ""}
               ></div>
             </li>
             <li>
-              <a
-                onMouseEnter={() => this.On_hover("red")}
-                onMouseLeave={() => this.On_hover("black")}
-                href="/about"
-              >
-                About Us
-              </a>
+              <a href="/about">About Us</a>
               <div
                 className={this.state.active == "about" ? "circle" : ""}
               ></div>
             </li>
             <li>
-              <a
-                onMouseEnter={() => this.On_hover("red")}
-                onMouseLeave={() => this.On_hover("black")}
-                href="/contact"
-              >
-                Contact
-              </a>
+              <a href="/contact">Contact</a>
               <div
                 className={this.state.active == "contact" ? "circle" : ""}
               ></div>
