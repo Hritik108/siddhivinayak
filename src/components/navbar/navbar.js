@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/css/navbar.css";
-// import jQuery from "jquery";
+import jQuery from "jquery";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class Navbar extends React.Component {
       active: "home",
       isResponsive: true,
     };
-    // this.handleScroll = this.handleScroll.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
     this.handleResize = this.handleResize.bind(this);
   }
 
@@ -46,6 +46,28 @@ class Navbar extends React.Component {
     this.setState({ isResponsive });
   }
 
+  handleScroll(event) {
+    let scrollTop = window.pageYOffset;
+    if (scrollTop > 10) {
+      jQuery(".navbar-main").css({
+        height: "60px",
+        padding: "0% 5%",
+        width: "95%",
+        border: "solid  #1363DF",
+        borderWidth: "0px 0px 4px 0px",
+        backgroundColor: "white",
+      });
+    } else {
+      jQuery(".navbar-main").css({
+        height: "80px",
+        padding: "1% 10% 0% 10%",
+        width: "80vw",
+        border: "0px",
+        backgroundColor: "transparent",
+      });
+    }
+  }
+
   render() {
     const { isResponsive } = this.state;
 
@@ -59,25 +81,25 @@ class Navbar extends React.Component {
             <li>
               <a href="/home">Home</a>
               <div
-                className={this.state.active == "home" ? "circle" : ""}
+                className={this.state.active === "home" ? "circle" : ""}
               ></div>
             </li>
             <li>
               <a href="/courses">Courses</a>
               <div
-                className={this.state.active == "courses" ? "circle" : ""}
+                className={this.state.active === "courses" ? "circle" : ""}
               ></div>
             </li>
             <li>
               <a href="/about">About Us</a>
               <div
-                className={this.state.active == "about" ? "circle" : ""}
+                className={this.state.active === "about" ? "circle" : ""}
               ></div>
             </li>
             <li>
               <a href="/contact">Contact</a>
               <div
-                className={this.state.active == "contact" ? "circle" : ""}
+                className={this.state.active === "contact" ? "circle" : ""}
               ></div>
             </li>
           </ul>
@@ -86,7 +108,6 @@ class Navbar extends React.Component {
     } else {
       return (
         <nav className="navbar-mobile">
-          <div>THIS IS LOGO</div>
           <ul>
             <li>
               <a href="home">Home</a>

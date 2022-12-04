@@ -53,6 +53,25 @@ a{
 }
 
 .navbar-mobile{
-   width: 30%;
-   background-color: red;
+   width: 50vw;
+   height: 100vh;
+   background-color: #501B1D;
+   padding-top: 20%;
+}
+
+.navbar-mobile ul{
+    padding-left: 40%;
+}
+
+.navbar-mobile ul li{
+    font-size: 1.5rem;
+    justify-content: left;
+    padding-top: 5%;
+    text-align: justify;
+    
+}
+
+.navbar-mobile ul li a{
+    color: white;
+
 }
