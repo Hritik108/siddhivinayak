@@ -1,7 +1,9 @@
 import "./App.css";
-import AboutUs from "./components/aboutUs";
+import React from "react";
+import AboutUs from "./components/aboutUs.js";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import NavbarPage from "./pages/navbarpage.js";
+import Contact from "./components/contact/contact.js";
 
 function App() {
   return (
@@ -11,8 +13,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<h1> </h1>}></Route>
           <Route exact path="/home" element={<h1> </h1>}></Route>
-          <Route exact path="/about" element={<h1></h1>}></Route>
-          <Route exact path="/contact" element={<h1></h1>}></Route>
+          <Route exact path="/about" element={<AboutUs />}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
         </Routes>
       </div>
     </Router>
