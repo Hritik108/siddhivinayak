@@ -1,0 +1,21 @@
+.AboutUsSection{
+    color: brown;
+    /* background-color: pink; */
+    width: 80vw;
+    margin: auto;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.AboutUsSection h2 {
+color: aqua;
+padding-top: 10px;
+}
+
+.AboutUsSectionp{
+    /* margin: auto; */
+    /* width: 80vw; */
+    /* height:20vh; */
+    /* background-color: blueviolet; */
+}
