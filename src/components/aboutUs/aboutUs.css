@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .aboutUs{
 /* background-color: aqua; */
 display: flex;
@@ -51,58 +50,4 @@ height: 100vh;
     padding-bottom: 10px;
     background-color:#DD5353;
 
-=======
-.aboutUs{
-/* background-color: aqua; */
-display: flex;
-margin: auto;
-flex-flow:column;
-/* margin-top: 7%; */
-height: 100vh;
-}
-
-.aboutUsImage{
-    display: flex;
-    width: 50%;
-}
-
-.aboutUsImage-image{
- 
-    width: auto;
-    height: 20vh;
-    margin: auto;
-    margin-top: 10px;
-
-}
-
-
-
-
-.aboutUsSection2{
-    display: flex;
-    color: brown;
-    width: 80vw;
-    word-wrap: break-word;
-    margin: auto;
-    height: fit-content;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    background-color:#DD5353;
-
-}
-
-.aboutUsSection3{
-    display: flex;
-    color: brown;
-    width: 80vw;
-    word-wrap: break-word;
-    margin: auto;
-    height: fit-content;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    background-color:#DD5353;
-
->>>>>>> refs/remotes/origin/main
 }
