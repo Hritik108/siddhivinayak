@@ -3,6 +3,7 @@ import React from "react";
 import AboutUs from "./components/aboutUs.js";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import NavbarPage from "./pages/navbarpage.js";
+import FooterPage from "./pages/footerpage.js";
 import Contact from "./components/contact/contact.js";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/about" element={<AboutUs />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
         </Routes>
+        <FooterPage />
       </div>
     </Router>
   );

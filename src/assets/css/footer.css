@@ -1,0 +1,9 @@
+footer h1 {
+  margin: 0;
+}
+
+.footerContainer {
+  background-color: black;
+  height: 100%;
+  color: #dd5353;
+}
