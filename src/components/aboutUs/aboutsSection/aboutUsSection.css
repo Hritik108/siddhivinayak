@@ -1,15 +1,17 @@
 .AboutUsSection{
-    color: brown;
+    color: white;
+    text-align: left;
     /* background-color: pink; */
     width: 80vw;
     margin: auto;
-    height: fit-content;
+    /* height: fit-content; */
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+
 }
 .AboutUsSection h2 {
-color: aqua;
+color:white;
 padding-top: 10px;
 }
 

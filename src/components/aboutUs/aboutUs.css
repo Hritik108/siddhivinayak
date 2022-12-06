@@ -1,9 +1,6 @@
-.aboutUs{
-/* background-color: aqua; */
-display: flex;
+/* .aboutUs{
 margin: auto;
 flex-flow:column;
-/* margin-top: &%; */
 height: 100vh;
 }
 
@@ -12,42 +9,125 @@ height: 100vh;
     width: 50%;
 }
 
-.aboutUsImage-image{
+.aboutUsImage-image1{
  
-    width: auto;
-    height: 20vh;
+    width: 30%;
+    height: 30vh;
     margin: auto;
     margin-top: 10px;
 
 }
 
+.aboutUsImage-image2{
+ 
+    width: 30%;
+    height: 25vh;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.aboutUsSection1{
+    width: 0vw;
+    word-wrap: break-word;
+    margin: auto;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
 
 
 
 .aboutUsSection2{
     display: flex;
-    color: brown;
-    width: 80vw;
+    width: 70vw;
     word-wrap: break-word;
     margin: auto;
     height: fit-content;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-    background-color:#DD5353;
 
 }
 
 .aboutUsSection3{
     display: flex;
-    color: brown;
-    width: 80vw;
+    width: 70vw;
     word-wrap: break-word;
     margin: auto;
-    height: fit-content;
+    background-color:#DD5353;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-    background-color:#DD5353;
+
+} */
+
+.AboutUsSection {
+    box-shadow: 2px 2px 5px 2px lightgray;
+}
+
+.AboutUsSection p,h2{
+    text-align: left;
+}
+
+.AboutUsSection1{
+ background-color:  #FED049;
+ width: 65vw;
+ margin: auto;
+ margin-bottom: 10px;
+ /* text-align: left; */
+ padding: 10px;
+ color: white;
+}
+
+
+
+
+.AboutUsSection2{
+    background-color:  #22A39F;
+    width: 65vw;
+    margin: auto;
+    margin-bottom: 10px;
+    /* text-align: left; */
+    padding: 10px;
+    color: white;
+    display: flex;
+   }
+
+   .AboutUsSection3{
+    background-color: #DD5353;
+    width: 65vw;
+    margin: auto;
+    margin-bottom: 10px;
+    /* text-align: left; */
+    padding: 10px;
+    color: white;
+    display: flex;
+   }
+
+   .aboutUsImage-image1{
+ 
+    width: 200px;
+    /* height: 30vh; */
+    margin: auto;
+    margin-top: 10px;
 
 }
+
+.aboutUsImage-image2{
+ 
+    width: 200px;
+    /* height: 30vh; */
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .AboutUsSection{
+        display: flex;
+        flex-flow: column;
+    }
+  }
