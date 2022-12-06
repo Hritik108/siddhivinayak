@@ -34,7 +34,7 @@ class Contact extends Component {
                     <a href="tel:9819285180">+91 98192 85180</a>
                   </li>
                   <li>
-                    <a href="tel:8082772648">+91 80827 72648</a>
+                    <a href="tel:8082&&2648">+91 8082& &2648</a>
                   </li>
                 </ul>
               </div>
