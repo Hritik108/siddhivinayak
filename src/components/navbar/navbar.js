@@ -107,23 +107,49 @@ class Navbar extends React.Component {
       );
     } else {
       return (
-        <nav className="navbar-mobile">
-          <ul>
-            <li>
-              <a href="home">Home</a>
-            </li>
-            <li>
-              <a href="courses">Courses</a>
-            </li>
-            <li>
-              <a href="about">About Us</a>
-            </li>
-            <li>
-              <a href="contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
+        <div className="navbar-menuB">
+          <div className="menu-sidebar">
+            <a className="closebtn" onClick={() => closeNav()}>
+              ×
+            </a>
+            <a className="path" href="/Home">
+              Home
+            </a>
+            <a className="path" href="/About">
+              About Us
+            </a>
+            <a className="path" href="/Events">
+              Events
+            </a>
+            <a className="path" href="/Career">
+              Career Counseling
+            </a>
+            <a className="path" href="/Contact">
+              Contact Us
+            </a>
+          </div>
+          <div className="hamburger" onClick={() => openNav()}>
+            ☰
+          </div>
+          {/* <img id="navbar-logo" src={Logo} /> */}
+        </div>
       );
+    }
+
+    function openNav() {
+      jQuery(".menu-sidebar").css({
+        width: "300px",
+        borderWidth: "0px 2px 0px 0px",
+      });
+      jQuery("body").css({ marginLeft: "30px", Transition: ".5s" });
+    }
+
+    function closeNav() {
+      jQuery(".menu-sidebar").css({
+        width: "0%",
+        borderWidth: "0px 0px 0px 0px",
+      });
+      jQuery("body").css({ marginLeft: "0%", Transition: ".5s" });
     }
   }
 }

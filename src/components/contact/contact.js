@@ -7,7 +7,6 @@ class Contact extends Component {
   render() {
     return (
       <div>
-        <Navbar />
         <div className="contact">
           <div className="contact-body">
             <div className="contact-headings">
@@ -26,7 +25,6 @@ class Contact extends Component {
                 <h1 className="card-title">Talk to Us</h1>
                 <p className="card-text">
                   Interested to join? You can feel free to call us anytime
-                  <br />
                   during our working hours on the following contact numbers
                 </p>
                 <ul>
@@ -34,7 +32,7 @@ class Contact extends Component {
                     <a href="tel:9819285180">+91 98192 85180</a>
                   </li>
                   <li>
-                    <a href="tel:8082&&2648">+91 8082& &2648</a>
+                    <a href="tel:8082&amp;&amp;2648">+91 8082&amp; &amp;2648</a>
                   </li>
                 </ul>
               </div>
@@ -44,9 +42,8 @@ class Contact extends Component {
                 </div>
                 <h1 className="card-title">Find Us Here</h1>
                 <p className="card-text">
-                  Shop No 6, Siddhivinayak Classes,
-                  <br /> Near Agar Bazar Bus Stop, Agar Bazaar, Dadar West,
-                  <br /> Mumbai - 400028
+                  Shop No 6, Siddhivinayak Classes, Near Agar Bazar Bus Stop,
+                  Agar Bazaar, Dadar West, Mumbai - 400028
                 </p>
                 <p className="card-text">
                   At Ratan, Shop No: 10, S.K. Bole Road,
