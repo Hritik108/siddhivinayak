@@ -1,11 +1,19 @@
 .AboutUsSection1{
-background-color: #DD5353;
+background-color: #FED049;
+margin-bottom: 10px;
+/* width: 70vw; */
+height: 25vh;
 }
 
 .AboutUsSection2{
-    background-color:#DD5353;
+    background-color:#22A39F;
+    height: 32vh;
+    width: 50vw;
+    
     /* width: &0%; */
     }
  .AboutUsSection3{
         background-color: #DD5353;
+        height: 25vh;
+        width: 100%;
         }
