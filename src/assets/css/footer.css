@@ -1,15 +1,19 @@
-footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-}
 footer h1 {
   margin: 0;
 }
-
 .footerContainer {
   background-color: black;
-  /* height: 100%; */
+  padding: 3% 5%;
   color: #dd5353;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.footerLogo {
+  width: 25%;
+}
+.footerLogo p {
+  text-align: justify;
+  float: left;
 }
