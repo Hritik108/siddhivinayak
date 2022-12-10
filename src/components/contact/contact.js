@@ -7,22 +7,23 @@ class Contact extends Component {
   render() {
     return (
       <div>
+        <div className="contact-headings">
+          <h1>Get in touch</h1>
+          <p>
+            Want to get in touch? We'd love to hear from you.
+            <br /> Here's how you can reach us...
+          </p>
+        </div>
         <div className="contact">
-          <div className="contact-body">
-            <div className="contact-headings">
-              <h1>Get in touch</h1>
-              <p>
-                Want to get in touch? We'd love to hear from you. Here's how you
-                can reach us...
-              </p>
-            </div>
+          {/* <div className=""></div> */}
 
+          <div className="contact-body">
             <div className="cards">
               <div className="card">
                 <div className="card-icon">
                   <IoCall />
                 </div>
-                <h1 className="card-title">Talk to Us</h1>
+                <h3 className="card-title">Talk to Us</h3>
                 <p className="card-text">
                   Interested to join? You can feel free to call us anytime
                   during our working hours on the following contact numbers
@@ -32,7 +33,7 @@ class Contact extends Component {
                     <a href="tel:9819285180">+91 98192 85180</a>
                   </li>
                   <li>
-                    <a href="tel:8082&amp;&amp;2648">+91 8082&amp; &amp;2648</a>
+                    <a href="tel:8082772648">+91 80827 72648</a>
                   </li>
                 </ul>
               </div>
@@ -40,16 +41,15 @@ class Contact extends Component {
                 <div className="card-icon">
                   <IoLocationSharp />
                 </div>
-                <h1 className="card-title">Find Us Here</h1>
+                <h3 className="card-title">Find Us Here</h3>
                 <p className="card-text">
                   Shop No 6, Siddhivinayak Classes, Near Agar Bazar Bus Stop,
                   Agar Bazaar, Dadar West, Mumbai - 400028
                 </p>
+                <br />
                 <p className="card-text">
-                  At Ratan, Shop No: 10, S.K. Bole Road,
-                  <br /> Agar Bazaar, Near Siddhivinayak Temple, Dadar West,
-                  <br />
-                  Mumbai - 400028
+                  At Ratan, Shop No: 10, S.K. Bole Road, Agar Bazaar, Near
+                  Siddhivinayak Temple, Dadar West, Mumbai - 400028
                 </p>
               </div>
             </div>

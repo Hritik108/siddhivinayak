@@ -1,8 +1,19 @@
+.contact-headings {
+  margin-top: 100px;
+  background-color: rgb(121, 0, 196);
+  width: 90%;
+  padding: 1em 0 6em 10vw;
+  display: block;
+}
+
 .contact-headings h1 {
+  font-size: 3em;
+  text-align: left;
   color: #dd5353;
-  font-size: 3.5rem;
 }
 .contact-headings p {
+  text-align: left;
+  color: white;
   margin-top: 0;
   margin-bottom: 2em;
 }
@@ -10,26 +21,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 750px;
+  margin-top: -5em;
+  /* height: 750px; */
 }
 .contact-body {
-  width: 100%;
-}
-.contact-body h1 {
-  margin: 0;
+  width: 80vw;
 }
 .cards {
   display: flex;
-  justify-content: space-evenly;
-  padding: 0 2em 2em;
+  justify-content: space-between;
 }
 .card {
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 30px gray;
-  border-radius: 5px;
-  padding: 1em;
-  width: 40%;
-  height: 20em;
+  /* backdrop-filter: blur(10px); */
+  background-color: white;
+  /* box-shadow: 0 0 30px gray; */
+  border: 0.1px solid rgb(187, 187, 187);
+  padding: 3em;
+  width: 50%;
+  height: 17em;
+}
+
+.card:nth-child(odd) {
+  margin-right: 2em;
 }
 
 .card-text,
@@ -38,52 +51,69 @@
 }
 
 .card-text {
-  padding: 0.5em 0;
+  padding: 1em 0;
 }
 .card-icon {
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 .card ul {
   padding: 0;
 }
 
 /* Media queries */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 952px) {
+  .card {
+    height: 18em;
+  }
+}
+@media screen and (max-width: 853px) {
+  .card {
+    height: 19em;
+  }
+}
+@media screen and (max-width: 791px) {
+  .contact-body {
+    padding: 0 20px;
+    width: 100%;
+  }
   .cards {
     display: grid;
     place-items: center;
   }
   .card-icon {
-    font-size: 3em;
+    font-size: 2em;
   }
   .card {
-    width: 80%;
+    height: 15em;
+    padding: 2em 20px;
+    width: 90%;
+  }
+  .card:nth-child(odd) {
+    margin-right: 0;
   }
   .card:nth-child(even) {
     margin-top: 2em;
   }
-}
-@media screen and (max-width: 610px) {
-  .contact-headings p {
-    padding: 0 1em;
+  .card-text {
+    padding: 1em 3em;
   }
 }
 @media screen and (max-width: 536px) {
-  .contact-headings h1 {
-    font-size: 3rem;
-  }
   .card p {
     padding: 0 1em;
   }
 }
 @media screen and (max-width: 388px) {
-  .card:nth-child(even) {
-    height: 20.5em;
+  .card {
+    height: 12em;
   }
+  /* .card:nth-child(even) {
+    height: 20.5em;
+  } */
   .card-text br {
-    display: none;
+    display: block;
   }
   .card-icon {
-    font-size: 2em;
+    font-size: 1em;
   }
 }

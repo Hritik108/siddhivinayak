@@ -17,7 +17,7 @@ function App() {
           <Route exact path="/about" element={<AboutUs />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
         </Routes>
-        <FooterPage />
+        {/* <FooterPage /> */}
       </div>
     </Router>
   );
