@@ -1,6 +1,6 @@
 .contact-headings {
   margin-top: 100px;
-  background-color: rgb(121, 0, 196);
+  background-color: #eddbc0;
   width: 90%;
   padding: 1em 0 6em 10vw;
   display: block;
@@ -13,7 +13,6 @@
 }
 .contact-headings p {
   text-align: left;
-  color: white;
   margin-top: 0;
   margin-bottom: 2em;
 }
@@ -22,6 +21,7 @@
   justify-content: center;
   align-items: center;
   margin-top: -5em;
+  margin-bottom: 1em;
   /* height: 750px; */
 }
 .contact-body {
@@ -115,5 +115,15 @@
   }
   .card-icon {
     font-size: 1em;
+  }
+}
+@media screen and (max-width: 374px) {
+  .card:nth-child(even) {
+    height: 14em;
+  }
+}
+@media screen and (max-width: 303px) {
+  .card:nth-child(even) {
+    height: 15em;
   }
 }
