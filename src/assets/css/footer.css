@@ -1,19 +1,143 @@
-footer h1 {
-  margin: 0;
-}
-.footerContainer {
+.footer-container{
+  /* box-sizing: border-box; */
+  width: 100%;
   background-color: black;
-  padding: 3% 5%;
-  color: #dd5353;
+  display: block;
+}
+.footer-details{
+  width: 95%;
   margin: auto;
+  padding: 30px 10px;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
+  justify-content: center;
 }
-.footerLogo {
+/* .footer-left{
+  width: 33%;
+ 
+  padding:10px 20px;
+  box-sizing: border-box;
+} */
+.footer-items{
   width: 25%;
+  padding:10px 25px;
+  box-sizing: border-box;
+ 
 }
-.footerLogo p {
-  text-align: justify;
-  float: left;
+.footer-left p{
+  color: grey;
+font-size: 16px;
+text-align: justify;
+line-height: 25px;
+}
+#logo{
+  width: 150px;
+  height: 150px;
+  margin-left: 60px;
+}
+
+#links-header{
+  margin-top: 10px 0;
+  color: whitesmoke;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.footer-links{
+  list-style: none;
+  padding: 0px;
+}
+.footer-links li a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 21px;
+}
+.footer-links li{
+  margin: 10px 0px;
+  display: flex;
+}
+.footer-links li a:hover{
+  color: rgb(25, 151, 197);
+  border-bottom: 3px solid rgb(42, 197, 253);
+  transition: 0.5s;
+}
+#location{
+  font-size: 15px;
+}
+#location:hover{
+  border-bottom: none;
+}
+.contact-info{
+  padding-left: 26%;
+}
+.contact-info h3{
+  color: whitesmoke;
+  font-size: 25px;
+}
+.contact-details{
+  list-style: none;
+  /* padding-left: 20px; */
+}
+.contact-info ul li{
+  color:whitesmoke;
+  font-size: 20px;
+}
+.contact-icon{
+  color: whitesmoke;
+  padding-right: 10px;
+  /* display: inline-block; */
+}
+.footer-links li{
+  color: whitesmoke;
+  margin-top: 12px;
+}
+.footer-items p {
+color: grey;
+font-size: 16px;
+text-align: justify;
+line-height: 25px;
+}
+.social-media {
+width: 100%;
+color: #fff;
+
+}
+
+.social-media a {
+text-decoration: none;
+}
+
+.icons{
+/* height: 30px;
+  width: 30px; */
+margin: 10px 5px;
+  padding: 8px;
+  color: rgb(253, 0, 0);
+  border-radius: 50%;
+border: 1px solid grey;
+transition: 0.3s;
+}
+.icons:hover{
+  background: grey;  
+  transition: 1s;
+}
+.footer-bottom {
+  text-align: center;
+padding: 10px;
+background: #3d545f;
+color: #fff;
+font-size: 12px;
+}
+@media screen and (max-width: 1085px) {
+.footer-items {
+  width: 50%;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+.footer-items {
+  width: 100%;
+}
 }
