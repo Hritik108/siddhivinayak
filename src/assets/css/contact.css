@@ -32,13 +32,12 @@
   justify-content: space-between;
 }
 .card {
-  /* backdrop-filter: blur(10px); */
   background-color: white;
-  /* box-shadow: 0 0 30px gray; */
   border: 0.1px solid rgb(187, 187, 187);
-  padding: 3em;
+  padding: 10px;
   width: 50%;
-  height: 17em;
+  padding: 3% 0%;
+  /* height: 17em; */
 }
 
 .card:nth-child(odd) {
