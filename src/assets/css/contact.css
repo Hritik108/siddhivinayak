@@ -4,6 +4,9 @@
   width: 90%;
   padding: 1em 0 6em 10vw;
   display: block;
+  position: relative;
+  z-index: -1;
+  animation: animatebottom 1s;
 }
 
 .contact-headings h1 {
@@ -26,10 +29,23 @@
 }
 .contact-body {
   width: 80vw;
+  position: relative;
+  z-index: -1;
+  animation: animatebottom 1s;
+}
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .card {
   background-color: white;
@@ -37,7 +53,7 @@
   padding: 10px;
   width: 50%;
   padding: 3% 0%;
-  /* height: 17em; */
+  height: 17em;
 }
 
 .card:nth-child(odd) {
@@ -60,14 +76,30 @@
 }
 
 /* Media queries */
+@media screen and (max-width: 1237px) {
+  br {
+    display: none;
+  }
+}
 @media screen and (max-width: 952px) {
   .card {
     height: 18em;
   }
 }
+@media screen and (max-width: 880px) {
+  .contact-headings {
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 853px) {
   .card {
     height: 19em;
+  }
+}
+
+@media screen and (max-width: 838px) {
+  .card {
+    height: 20em;
   }
 }
 @media screen and (max-width: 791px) {
@@ -97,6 +129,11 @@
     padding: 1em 3em;
   }
 }
+@media screen and (max-width: 618px) {
+  .card {
+    height: 16em;
+  }
+}
 @media screen and (max-width: 536px) {
   .card p {
     padding: 0 1em;
@@ -121,8 +158,18 @@
     height: 14em;
   }
 }
-@media screen and (max-width: 303px) {
+@media screen and (max-width: 340px) {
   .card:nth-child(even) {
+    height: 18em;
+  }
+}
+@media screen and (max-width: 340px) {
+  .card:nth-child(even) {
+    height: 18em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card:nth-child(odd) {
     height: 15em;
   }
 }

@@ -27,7 +27,8 @@ class Contact extends Component {
                   </div>
                   <h3 className="card-title">Talk to Us</h3>
                   <p className="card-text">
-                    Interested to join? You can feel free to call us anytime
+                    Interested to join? You can feel free to call us anytime{" "}
+                    <br />
                     during our working hours on the following contact numbers
                   </p>
                   <ul>
@@ -49,11 +50,13 @@ class Contact extends Component {
                   <h3 className="card-title">Find Us Here</h3>
                   <p className="card-text">
                     Shop No 6, Siddhivinayak Classes, Near Agar Bazar Bus Stop,
+                    <br />
                     Agar Bazaar, Dadar West, Mumbai - 400028
                   </p>
                   <br />
                   <p className="card-text">
                     At Ratan, Shop No: 10, S.K. Bole Road, Agar Bazaar, Near
+                    <br />
                     Siddhivinayak Temple, Dadar West, Mumbai - 400028
                   </p>
                 </Container>
