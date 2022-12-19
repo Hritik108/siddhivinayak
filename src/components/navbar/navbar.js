@@ -56,6 +56,7 @@ class Navbar extends React.Component {
         border: "solid  #1363DF",
         borderWidth: "0px 0px 4px 0px",
         backgroundColor: "white",
+        Transition: "1s",
       });
     } else {
       jQuery(".navbar-main").css({
@@ -64,6 +65,7 @@ class Navbar extends React.Component {
         width: "80vw",
         border: "0px",
         backgroundColor: "transparent",
+        Transition: "1s",
       });
     }
   }
