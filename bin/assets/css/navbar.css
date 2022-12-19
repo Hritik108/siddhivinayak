@@ -1,0 +1,142 @@
+
+.navbar-main{
+    padding : 0% 10%;
+    display: flex;
+    height: 80px;
+    padding-top: 20px;
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    width: 80vw;
+    border-width: 0 0px 3px 0;
+    color: red;
+    transition: 1s;
+    z-index: 10;
+    justify-content: space-between;
+    margin-bottom: 100px ;
+}
+
+.circle {
+    width: 7px;
+    height: 7px;
+    border: 100px;
+    border-radius: 50%;
+    background-color: red;
+    margin: auto;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+ul{
+    list-style: none;
+}
+.navbar-main ul {
+    display: flex;
+    gap : 2rem;
+    
+}
+
+.navbar-main ul li a{
+    transition: 1s;
+}
+
+.navbar-main ul li a:hover{
+    color: red;
+}
+
+.navbar-main ul li{
+    font-size: 1.3rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-mobile{
+   width: 50vw;
+   height: 100vh;
+   background-color: #501B1D;
+   padding-top: 20%;
+}
+
+.navbar-mobile ul{
+    padding-left: 40%;
+}
+
+.navbar-mobile ul li{
+    font-size: 1.5rem;
+    justify-content: left;
+    padding-top: 5%;
+    text-align: justify;
+    
+}
+
+.navbar-mobile ul li a{
+    color: white;
+
+}
+.navbar-menuB{
+    /* position: fixed; */
+    /* margin: 0% 3%; */
+    /* margin-top: -10%; */
+    height: 100%;
+    display: flex;
+  }
+  
+  #navbar-logo{
+    width:50%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 25%;
+  }
+  
+  .hamburger{
+    font-size: 2em;
+    color: black;
+    /* background-color: white; */
+    transition: .5;
+    padding: 10px 15px;
+  }
+  
+  .hamburger:hover{
+    cursor: pointer;
+  }
+  
+  .menu-sidebar{
+    background-color:  #501B1D;
+    width: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+    position: fixed;
+    height: 100%;
+    border: 0px solid #501B1D;
+    border-style: dashed;
+    padding-top: 20%;
+  }
+  
+  .menu-sidebar .path{
+    display: block;
+    margin: auto;
+    width: 75%;
+    text-decoration: none;
+    color: white;
+    padding-top: 20px;
+    font-size: 1.5em;
+  }
+  
+  .closebtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2em;
+    padding-top: 20px;
+    padding-right: 5%;
+    color: aliceblue;
+  }
+  
+  .closebtn:hover{
+    cursor: pointer;
+  }
