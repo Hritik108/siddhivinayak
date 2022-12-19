@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import NavbarPage from "./pages/navbarpage.js";
-import Footer from "./pages/footerpage.js";
+import Footer from "./components/footer/footer.js";
 import Contact from "./components/contact/contact.js";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Courses from "./components/Courses/Courses";
@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/courses" element={<Courses />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );
