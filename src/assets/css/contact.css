@@ -6,7 +6,6 @@
   display: block;
   position: relative;
   z-index: -1;
-  animation: animatebottom 1s;
 }
 
 .contact-headings h1 {
