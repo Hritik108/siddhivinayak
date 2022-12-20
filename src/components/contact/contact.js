@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import Navbar from "../navbar/navbar.js";
 import "../../assets/css/contact.css";
 import { IoCall, IoLocationSharp } from "react-icons/io5";
 import { Container } from "@mui/material";
-import Footer from "../footer/footer.js";
 
 class Contact extends Component {
   render() {
@@ -63,7 +61,6 @@ class Contact extends Component {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

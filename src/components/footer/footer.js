@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Component } from "react";
 import "../../assets/css/footer.css";
 import { FaRegEnvelope, FaHome, FaPhoneAlt } from "react-icons/fa";
@@ -54,10 +53,6 @@ class Footer extends React.Component {
       </div>
     );
   }
-=======
-import React from "react";
-
-export default function Footer() {
-  return "hello";
->>>>>>> da693f82474a4865da95f216414c2375a96a5b7f
 }
+
+export default Footer;
