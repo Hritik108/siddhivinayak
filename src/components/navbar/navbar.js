@@ -50,10 +50,7 @@ class Navbar extends React.Component {
     let scrollTop = window.pageYOffset;
     if (scrollTop > 10) {
       jQuery(".navbar-main").css({
-        height: "60px",
-        padding: "0% 5%",
-        width: "90%",
-        border: "solid  #1363DF",
+        height: "70px",
         borderWidth: "0px 0px 4px 0px",
         backgroundColor: "white",
         Transition: "1s",
@@ -61,7 +58,6 @@ class Navbar extends React.Component {
     } else {
       jQuery(".navbar-main").css({
         height: "80px",
-        padding: "1% 10% 0% 10%",
         width: "80vw",
         border: "0px",
         backgroundColor: "transparent",
