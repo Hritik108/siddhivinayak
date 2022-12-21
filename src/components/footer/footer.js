@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import "../../assets/css/footer.css";
-import { FaRegEnvelope, FaHome, FaPhoneAlt } from "react-icons/fa";
+import {
+  FaRegEnvelope,
+  FaHome,
+  FaPhoneAlt,
+  FaFacebookSquare,
+  FaInstagram,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 class Footer extends React.Component {
   render() {
@@ -14,7 +21,26 @@ class Footer extends React.Component {
               different carrier opportunities and helps them excel in their
               carriers
             </p>
+            <div className="social">
+              <ul></ul>
+              <li>
+                <a>
+                  <FaFacebookSquare />
+                </a>
+              </li>
+              <li>
+                <a>
+                  <FaInstagram />
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/9819285180">
+                  <FaWhatsapp />
+                </a>
+              </li>
+            </div>
           </div>
+          <hr />
           <div className="fixedWidth usefulLinks">
             <h2>Useful Links</h2>
             <ul>
@@ -29,6 +55,7 @@ class Footer extends React.Component {
               </li>
             </ul>
           </div>
+          <hr />
           <div className="fixedWidth contactInfo">
             <h2>Contact</h2>
             <div className="contactDetails">

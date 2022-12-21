@@ -10,21 +10,29 @@
   width: 80%;
   padding: 1em;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 .fixedWidth {
-  float: left;
-  width: 33%;
   text-align: left;
-  margin: 0 2em;
 }
 .fixedWidth:nth-child(odd) {
-  margin-left: 0;
-  margin-right: 0;
+  width: 30%;
+  margin: 0;
 }
 .footerLogo h1 {
   margin: 0;
+}
+.social li {
+  list-style-type: none;
+  font-size: 2em;
+  display: inline;
+  padding: 0.1em 0.5em;
+}
+.social li a {
+  color: rgb(88, 88, 88);
+}
+.social li:nth-child(even) {
+  padding: 0;
 }
 h2 {
   margin: 0;
@@ -42,8 +50,32 @@ li {
   font-size: 2em;
   color: rgb(88, 88, 88);
   padding-right: 1em;
-  float: left;
 }
 .contactDetails {
-  margin: 2em 0;
+  margin: 1.5em 0;
+  display: flex;
+}
+.contactDetails p {
+  margin: 0;
+}
+hr {
+  display: none;
+}
+
+/*Media queries*/
+@media screen and (max-width: 791px) {
+  .footerContent {
+    display: block;
+    width: 90%;
+  }
+  .fixedWidth {
+    width: 100%;
+    margin: 0;
+  }
+  .fixedWidth:nth-child(odd) {
+    width: 100%;
+  }
+  hr {
+    display: block;
+  }
 }
