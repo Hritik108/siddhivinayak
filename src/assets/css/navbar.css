@@ -115,6 +115,7 @@ a{
     border: 0px solid #501B1D;
     border-style: dashed;
     padding-top: 20%;
+    z-index: 10;
   }
   
   .menu-sidebar .path{

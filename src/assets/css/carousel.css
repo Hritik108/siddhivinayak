@@ -1,3 +1,13 @@
 .carouselMain { 
-    margin-top: 100px;
+    /* width: 100vw; */
+    /* /* height: 90vh; */
+    margin-bottom: 10%; 
+}
+
+.carouselBackgrounImage{
+
+    width: 120vw;
+    max-height: 95vh;
+    object-fit: cover;
+    /* /* margin: auto; */
 }
