@@ -16,36 +16,17 @@ import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import education from './Courses.images/education.jpg'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import'./courses.css';
+// import { Link} from 'react-scroll'
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
-const cards = [1, 2, 3];
-
+const cards = [{id:'#h1'}, {id:'#h2'}, {id:'#h3'}];
 const theme = createTheme();
+let n=1;
 
 export default function Courses() {
   return (
     <ThemeProvider theme={theme}>
       {/* <CssBaseline /> */}
-      {/* <AppBar position="relative">
-        <Toolbar>
-          <CameraIcon sx={{ mr: 2 }} />
-          <Typography variant="h6" color="inherit" noWrap>
-            Album layout
-          </Typography>
-        </Toolbar>
-      </AppBar> */}
       <main>
         {/* Hero unit */}
         <Box
@@ -70,21 +51,13 @@ export default function Courses() {
               the creator, etc. Make it short and sweet, but not too short so folks
               don&apos;t simply skip over it entirely.
             </Typography>
-            {/* <Stack
-              sx={{ pt: 4 }}
-              direction="row"
-              spacing={2}
-              justifyContent="center"
-            >
-              <Button variant="contained">Main call to action</Button>
-              <Button variant="outlined">Secondary action</Button>
-            </Stack> */}
           </Container>
         </Box>
-        <Container sx={{ py: 8 }} maxWidth="lg">
+        <Container sx={{ py: 8 }} maxWidth="lg" >
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {cards.map((card) => (
+            {
+            cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
                 <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
@@ -109,13 +82,134 @@ export default function Courses() {
                   </CardContent>
                   <CardActions>
                     {/* <Button size="small">View</Button> */}
-                    <Button size="small" variant="contained">Read More</Button>
+                    <Button><a href={card.id}> Read More</a></Button>
                   </CardActions>
                 </Card>
               </Grid>
             ))}
           </Grid>
         </Container>
+
+                    
+        <Container sx={{ py: 8 }} maxWidth="lg">
+<Grid container spacing={4}>
+
+              <Grid item xs={12} sm={12} md={12} id="h1">
+                <Card
+                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }} 
+                >
+                  <CardMedia
+                    component="img"
+                    sx={{
+                      // 16:9
+                      pt: '2%',
+                    }}
+                    image={education}
+                    alt="random"
+                  />
+                  <CardContent sx={{ flexGrow: 1 }} >
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Mr Faculty
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={12} md={12} id="h2">
+                <Card
+                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }} 
+                >
+                  <CardMedia
+                    component="img"
+                    sx={{
+                      // 16:9
+                      pt: '2%',
+                    }}
+                    image={education}
+                    alt="random"
+                  />
+                  <CardContent sx={{ flexGrow: 1 }} >
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Mr Faculty
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+      
+              <Grid item xs={12} sm={12} md={12} id="h3">
+                <Card
+                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }} 
+                >
+                  <CardMedia
+                    component="img"
+                    sx={{
+                      // 16:9
+                      pt: '2%',
+                    }}
+                    image={education}
+                    alt="random"
+                  />
+                  <CardContent sx={{ flexGrow: 1 }} >
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Mr Faculty
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                      This is a media card. You can use this section to describe the
+                      content.<br/>
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+
+          </Grid>
+  {/* <Container md={6} sm={6} xs={12} sx={{
+    bgcolor: 'blue'
+  }}>hello</Container>
+  <Container md={6} sm={12} xs={12} sx={{
+    bgcolor: 'pink'
+  }}>nfodofo</Container> */}
+
+         </Container>
+
+
       </main>
       {/* Footer */}
       {/* <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
