@@ -56,6 +56,40 @@ class Footer extends React.Component {
             </ul>
           </div>
           <hr />
+          <div className="fixedWidth courses">
+            <h2>Courses Offered</h2>
+            <ul>
+              <li>
+                <a>XII - Science</a>
+              </li>
+              <li>
+                <a>XII - Commerce</a>
+              </li>
+              <li>
+                <a>XI - Science</a>
+              </li>
+              <li>
+                <a>XI - Commerce</a>
+              </li>
+              <li>
+                <p>
+                  <b>State Board</b>
+                </p>
+                <ul>
+                  <li>
+                    <a>X</a>
+                  </li>
+                  <li>
+                    <a>IX</a>
+                  </li>
+                  <li>
+                    <a>VIII</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <hr />
           <div className="fixedWidth contactInfo">
             <h2>Contact</h2>
             <div className="contactDetails">
@@ -68,7 +102,9 @@ class Footer extends React.Component {
               </p>
             </div>
             <div className="contactDetails">
-              <FaRegEnvelope className="icon" />
+              <div className="icon">
+                <FaRegEnvelope />
+              </div>
               <p>abcxyz@gmail.com</p>
             </div>
             <div className="contactDetails">

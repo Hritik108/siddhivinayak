@@ -14,9 +14,9 @@
 }
 .fixedWidth {
   text-align: left;
+  width: 20%;
 }
 .fixedWidth:nth-child(odd) {
-  width: 30%;
   margin: 0;
 }
 .footerLogo h1 {
@@ -43,6 +43,13 @@ ul {
 li {
   padding: 0.5em 0;
 }
+.courses p {
+  margin: 0;
+}
+.courses ul ul {
+  list-style-type: circle;
+  padding-left: 1em;
+}
 .contactInfo li {
   float: left;
 }
@@ -63,6 +70,16 @@ hr {
 }
 
 /*Media queries*/
+@media screen and (max-width: 1235px) {
+  .courses ul li {
+    padding: 0.3em;
+  }
+}
+@media screen and (max-width: 799px) {
+  .social li:nth-child(odd) {
+    padding: 0.1em;
+  }
+}
 @media screen and (max-width: 791px) {
   .footerContent {
     display: block;
@@ -77,5 +94,8 @@ hr {
   }
   hr {
     display: block;
+  }
+  .social li:nth-child(odd) {
+    padding: 0.5em;
   }
 }
