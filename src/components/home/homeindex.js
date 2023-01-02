@@ -13,18 +13,18 @@ class Homeindex extends React.Component {
       <div className="index-main">
         <div className="index-description">
           <div className="desc-main">
-            <h3>Shree Siddhivinayak Class</h3>
+            <h3>Shree Siddhivinayak Classes</h3>
             <h1>
-              KNOW <strong>YOURSELF</strong>, <br />
-              KNOW YOUR <strong>POTENTIAL</strong>
+              {/* KNOW <strong>YOURSELF</strong>, <br />
+              KNOW YOUR <strong>POTENTIAL</strong> */}
+              A PERFECT PLACE FOR A BRIGHT FUTURE
             </h1>
           </div>
           <div className="desc-sub">
             <p>
-              Darpan is a youth club empowered by its members with enthusuiasm
-              to contribute towards the academic, personal, social &amp;
-              cultural development of individuals by inclucating the right
-              education &amp; guidance
+              Embark on a journey with us and learn more about your strengths
+              and weaknesses. We will help you in all the possible ways to make
+              you better!{" "}
             </p>
           </div>
           <div className="index-buttons">

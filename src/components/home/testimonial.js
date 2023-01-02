@@ -8,36 +8,41 @@ class Testimonial extends React.Component {
           <figcaption>
             <blockquote>
               <p>
-                If you do the job badly enough, sometimes you don't get asked to
-                do it again.
+                My experience here was quite astonishing. I received all the
+                required help from the teachers and staff and I am glad to say
+                the Shree Siddhivinayak Classes has helped me a lot during in my
+                academics.
               </p>
             </blockquote>
-            <h3>Wisteria Ravenclaw</h3>
-            <h4>Google Inc.</h4>
+            <h3>Sallagargi Vikhil</h3>
+            <h4>2016-2018</h4>
           </figcaption>
         </figure>
         <figure class="snip1533">
           <figcaption>
             <blockquote>
               <p>
-                I'm killing time while I wait for life to shower me with meaning
-                and happiness.
+                The teachers and the mentors have helped me a lot academically
+                during my time and I can't be more grateful to the teachers and
+                mentors who helped me.
               </p>
             </blockquote>
-            <h3>Ursula Gurnmeister</h3>
-            <h4>Facebook</h4>
+            <h3>Ganesh Vemulawada</h3>
+            <h4>2016-2018</h4>
           </figcaption>
         </figure>
         <figure class="snip1533">
           <figcaption>
             <blockquote>
               <p>
-                The only skills I have the patience to learn are those that have
-                no real application in life.{" "}
+                I have learned and developed many new things very effectively
+                thanks to the teaching and assistance of the teachers and
+                mentors and I am confident that to say that Shree Siddhivinayak
+                Classes has helped me a lot during my academics.
               </p>
             </blockquote>
-            <h3>Ingredia Nutrisha</h3>
-            <h4>Twitter</h4>
+            <h3>Prashant Vasala</h3>
+            <h4>2016-2018</h4>
           </figcaption>
         </figure>
       </div>
