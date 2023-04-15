@@ -6,61 +6,40 @@ import Slider from "react-slick";
 import Education from "../Courses/Courses.images/education.jpg";
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
+    const { className, style, onClick } = props;
+    return <div className={className} style={{ ...style, display: "block", background: "red" }} onClick={onClick} />;
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
+    const { className, style, onClick } = props;
+    return <div className={className} style={{ ...style, display: "block", background: "green" }} onClick={onClick} />;
 }
 
 class Carousel extends React.Component {
-  render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
-    };
-    return (
-      <Slider className="carouselMain" {...settings}>
-        <div>
-          <img className="carouselBackgrounImage" src={Education} />
-        </div>
-        <div>
-          <img className="carouselBackgrounImage" src={Education} />
-        </div>
-        <div>
-          <img className="carouselBackgrounImage" src={Education} />
-        </div>
-        <div>
-          <img className="carouselBackgrounImage" src={Education} />
-        </div>
-        <div>
-          <img className="carouselBackgrounImage" src={Education} />
-        </div>
-        <div>
-          <img className="carouselBackgrounImage" src={Education} />
-        </div>
-      </Slider>
-    );
-  }
+    render() {
+        var settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            nextArrow: <SampleNextArrow />,
+            prevArrow: <SamplePrevArrow />,
+        };
+        return (
+            <Slider className="carouselMain" {...settings}>
+                <div>
+                    <img style={{ maxWidth: "100%", height: "auto" }} className="carouselBackgrounImage" src={Education} />
+                </div>
+                <div>
+                    <img style={{ maxWidth: "100%", height: "auto" }} className="carouselBackgrounImage" src={Education} />
+                </div>
+                <div>
+                    <img style={{ maxWidth: "100%", height: "auto" }} className="carouselBackgrounImage" src={Education} />
+                </div>
+            </Slider>
+        );
+    }
 }
 
 export default Carousel;
