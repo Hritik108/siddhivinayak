@@ -29,13 +29,13 @@ class Carousel extends React.Component {
         return (
             <Slider className="carouselMain" {...settings}>
                 <div>
-                    <img style={{ maxWidth: "100%", height: "auto" }} className="carouselBackgrounImage" src={Education} />
+                    <img className="carouselBackgrounImage" src={Education} />
                 </div>
                 <div>
-                    <img style={{ maxWidth: "100%", height: "auto" }} className="carouselBackgrounImage" src={Education} />
+                    <img className="carouselBackgrounImage" src={Education} />
                 </div>
                 <div>
-                    <img style={{ maxWidth: "100%", height: "auto" }} className="carouselBackgrounImage" src={Education} />
+                    <img className="carouselBackgrounImage" src={Education} />
                 </div>
             </Slider>
         );
