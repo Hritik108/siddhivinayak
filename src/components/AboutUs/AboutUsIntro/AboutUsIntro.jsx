@@ -4,9 +4,7 @@ import { Box } from "@mui/system";
 import { Grid } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from '@mui/material/CardMedia';
-import Intro from "./education.jpg"
-// import {Item} from "@mui/icons-material"
+
 class AboutUsIntro extends React.Component {
   render() {
     return (
@@ -19,7 +17,7 @@ class AboutUsIntro extends React.Component {
           }}
         >
 
-<Container maxWidth="sm">
+          <Container maxWidth="sm">
             <Typography
               component="h1"
               variant="h3"
@@ -27,88 +25,41 @@ class AboutUsIntro extends React.Component {
               color="text.primary"
               gutterBottom
             >
-              Welcome to Siddhivinayk
+              Welcome to Shree Siddhivinayak Classes
             </Typography>
-            {/* <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Something short and leading about the collection below—its contents,
-              the creator, etc. Make it short and sweet, but not too short so folks
-              don&apos;t simply skip over it entirely.
-            </Typography> */}
+          
           </Container>
           </Box>
-        <Container maxWidth="lg">
-          {/* <h1>AboutUsintro...ehehehhehe</h1> */}
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
+          <Container maxWidth="lg">
+          <Grid container spacing={2} justifyContent="center">
+            <Grid item xs={12} md={12}>
               <CardContent sx={{ flexGrow: 1 }}>
-                {/* <Typography gutterBottom variant="h5" component="h2">
-                  Heading
-                </Typography> */}
-                <Typography color="text.secondary" textAlign={"justify"}>
-                  As we approach the 21st century we find our systems and the
-                  world around us changing with rapidity, bringing us face to
-                  face with newer realities, forcing us to renew and reset our
-                  objectives. An objective always has a commitment to the
-                  future. 
-                  <br/>
-                  <br/>
-                  S.V.EDU CENTRE is consciously striving to achieve
-                  peaks of excellence in the academic field as well as in the
-                  life itself through a large variety of well organized
-                  curricular and co-curricular programs and projects. Now S.V.
-                  EDU CENTRE includes Top Class faculty members who are very
-                  much accessible to students with an air conditioned and sound
-                  proof audio visual classrooms. 
-                  <br/>
-                  <br/>
-                  Gainful Vocational Training has
-                  also been a prime objective of the S.V.EDU CENTRE (in
-                  association with SWAMI VIVEKANANDA EDUCATIONAL INSTITUTION),
-                  aimed at imparting practical vocational training to the young
-                  so that they can stand on their own feet and become productive
-                  and earning member of the society. 
-                  <br/>
-                  <br/>
-                  Due the recent changes in
-                  the S.S.C., H.S.C syllabus also in Engineering and medical
-                  entrances exam formats, we are well aware of the anxiety that
-                  parents and students feel today. By God’s blessings and with
-                  dedicated team of expert faculties we entered in 30th academic
-                  year. In our 35 years of teaching experience, we dealt with
-                  situations like the current one several times. Our experience
-                  has proven that there is only one solution to such situations.
-                  <br/>
-                  <br/>
-                  We great interest in the field of Education we build courage
-                  in students mind, “If you have the courage to begin, you have
-                  the courage to succeed.”
+                <Typography color="text.primary" textAlign={"justify"}>
+                 <p> As we approach the 21st century we find our systems and the world around us changing with rapidity, bringing us face to face with newer realities, forcing us to renew and reset our objectives. An objective always has a commitment to the future. 
+                 </p> 
+                  <p>
+                  Shree Siddhivinayak Classes was started by Girish Ranawat and is a well-known educational institution that has been providing quality education to students for several years. The institution is committed to providing an excellent academic experience to its students through a variety of well-organized curricular and co-curricular programs and projects. 
+                  </p>
+                  <p>
+                  The institution is equipped with top-class faculty members who are easily accessible to students. The classrooms are air-conditioned and soundproofed with audio-visual aids to ensure a comfortable and efficient learning environment for the students.
+                  </p>
+                  <p>
+                  Shree Siddhivinayak Classes offers coaching in the fields of Science and Commerce, with a strong focus on competitive exams such as JEE, NEET, MHT-CET, CET, CA, CS, and CMA. The institution's experienced and qualified faculty members provide students with a solid foundation in the subjects, ensuring that they are well-prepared for the competitive exams.
+                  </p>
+                  <p>
+                  In addition to academic excellence, Shree Siddhivinayak Classes also places a strong emphasis on vocational training. The institution aims to impart practical vocational training to its students so that they can become productive and self-sufficient members of society.
+                  </p>
+                  <p>
+                  One of the unique features of Shree Siddhivinayak Classes is its one-to-one mentoring program. The program is designed to provide personalized attention and guidance to students, with mentors working closely with students to identify their strengths and weaknesses and help them achieve their academic and career goals. The institution believes that each student has unique potential, and the mentoring program is designed to help students realize their full potential.
+                  </p>
+                  <p>
+                  Overall, Shree Siddhivinayak Classes is a comprehensive educational institution that is dedicated to providing quality education and training to its students. With a focus on academic excellence, vocational training, and one-to-one mentoring, the institution is well-equipped to help students achieve their academic and career goals.
+                  </p>
                 </Typography>
               </CardContent>
             </Grid>
-            <Grid item xs={12} md={6}>
-              <CardContent sx={{ flexGrow: 1 }}>
-              <CardMedia
-                    component="img"
-                    sx={{
-                      // 16:9
-                      pt: '2%',
-                    }}
-                    image={Intro}
-                    alt="random"
-                  />
-               <CardMedia
-                    component="img"
-                    sx={{
-                      // 16:9
-                      pt: '2%',
-                    }}
-                    image={Intro}
-                    alt="random"
-                  />
-              </CardContent>
             </Grid>
-          </Grid>
-        </Container>
+          </Container>
       </div>
     );
   }
