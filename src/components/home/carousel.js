@@ -1,45 +1,53 @@
 import React from "react";
-import "../../assets/css/carousel.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import { Carousel } from "react-bootstrap";
 import Education from "../Courses/Courses.images/education.jpg";
+import "bootstrap/dist/css/bootstrap.min.css";  
 
-function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return <div className={className} style={{ ...style, display: "block", background: "red" }} onClick={onClick} />;
+function CarouselPage() {
+  return (
+        <div>
+          <Carousel>
+            <Carousel.Item>
+              <figure>
+                <img
+                  className="vh-100 vw-100"
+                  src={Education}
+                  alt="First slide"
+                />
+              </figure>
+              <Carousel.Caption>
+                <h3>Welcome to Evita Espressobar</h3>
+                <p>Get the best coffee and cakes in town!</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="vh-100 vw-100"
+                src={Education}
+                alt="Second slide"
+              />
+              <Carousel.Caption>
+                <h3>Try our new cake flavors</h3>
+                <p>From classic chocolate to exotic mango</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="vh-100 vw-100"
+                src={Education}
+                alt="Third slide"
+              />
+              <Carousel.Caption>
+                <h3>Order catering for your event</h3>
+                <p>
+                  Get delicious cakes and pastries delivered to your doorstep
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </div>
+
+  );
 }
 
-function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return <div className={className} style={{ ...style, display: "block", background: "green" }} onClick={onClick} />;
-}
-
-class Carousel extends React.Component {
-    render() {
-        var settings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            nextArrow: <SampleNextArrow />,
-            prevArrow: <SamplePrevArrow />,
-        };
-        return (
-            <Slider className="carouselMain" {...settings}>
-                <div>
-                    <img className="carouselBackgrounImage" src={Education} />
-                </div>
-                <div>
-                    <img className="carouselBackgrounImage" src={Education} />
-                </div>
-                <div>
-                    <img className="carouselBackgrounImage" src={Education} />
-                </div>
-            </Slider>
-        );
-    }
-}
-
-export default Carousel;
+export default CarouselPage;

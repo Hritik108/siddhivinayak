@@ -58,7 +58,7 @@ class Navbar extends React.Component {
     } else {
       jQuery(".navbar-main").css({
         height: "80px",
-        width: "80vw",
+        width: "100vw",
         border: "0px",
         backgroundColor: "transparent",
         Transition: "1s",

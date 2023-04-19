@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../components/home/carousel";
+import CarouselPage from "../components/home/carousel";
 import Testimonial from "../components/home/testimonial";
 import Homeindex from "../components/home/homeindex";
 
@@ -8,7 +8,7 @@ class HomePage extends React.Component {
     return (
       <div>
         <Homeindex />
-        <Carousel />
+        <CarouselPage />
         <Testimonial />
       </div>
     );
