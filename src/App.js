@@ -9,21 +9,21 @@ import Courses from "./components/Courses/Courses";
 import HomePage from "./pages/home";
 
 function App() {
-  return (
-    <Router>
-      <div className="App">
-        <NavbarPage />
-        <Routes>
-          <Route exact path="/" element={<HomePage />}></Route>
-          <Route exact path="/home" element={<HomePage />}></Route>
-          <Route exact path="/about" element={<AboutUs />}></Route>
-          <Route exact path="/courses" element={<Courses />}></Route>
-          <Route exact path="/contact" element={<Contact />}></Route>
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
-  );  
+    return (
+        <Router>
+            <div className="App">
+                <NavbarPage />
+                <Routes>
+                    <Route exact path="/" element={<HomePage />}></Route>
+                    <Route exact path="/home" element={<HomePage />}></Route>
+                    <Route exact path="/about" element={<AboutUs />}></Route>
+                    <Route exact path="/courses" element={<Courses />}></Route>
+                    <Route exact path="/contact" element={<Contact />}></Route>
+                </Routes>
+                <Footer />
+            </div>
+        </Router>
+    );
 }
 
 export default App;
