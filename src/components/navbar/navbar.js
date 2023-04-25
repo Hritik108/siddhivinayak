@@ -3,6 +3,7 @@ import "../../assets/css/navbar.css";
 import jQuery from "jquery";
 import Courses from "../Courses/Courses";
 
+
 class Navbar extends React.Component {
     constructor(props) {
         super(props);
@@ -128,9 +129,6 @@ class Navbar extends React.Component {
                         </a>
                         <a className="path" href="/About">
                             About Us
-                        </a>
-                        <a className="path" href="/Events">
-                            Events
                         </a>
                         <a className="path" href="/Career">
                             Career Counseling

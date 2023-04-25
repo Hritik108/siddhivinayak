@@ -1,3 +1,7 @@
 html {
     scroll-behavior: smooth;
   }
+
+  .card:nth-child(odd) {
+    margin-right: 0em !important;
+}
