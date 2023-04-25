@@ -1,25 +1,23 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
-import CameraIcon from "@mui/icons-material/PhotoCamera";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
-import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Link from "@mui/material/Link";
 import education from "./Courses.images/education.jpg";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./courses.css";
 // import { Link} from 'react-scroll'
 
-const cards = [{ id: "#h1" }, { id: "#h2" }, { id: "#h3" }];
+const cards = [
+    { id: "#h1", course: "SSC", description: "Shree Siddhivinayak Classes provides comprehensive coaching and guidance to Maharashtra SSC board students with expert faculty, well-designed study material, and regular tests and assessments to ensure academic success." },
+    { id: "#h2", course: "HSC", description: "Shree Siddhivinayak Classes provides comprehensive coaching and guidance to Maharashtra HSC Board students, helping them to excel in their studies and achieve their academic goals. Their programs cover all the key subjects, including Mathematics, Science, and Commerce, and are designed to build a strong foundation of knowledge and skills for future success." },
+    { id: "#h3", course: "JEE", description: "Shree Siddhivinayak Classes provides comprehensive coaching for Maharashtra JEE Main aspirants, covering all the important topics and concepts necessary to excel in the exam. They offer expert guidance, practice materials, and regular assessments to help students achieve their academic goals." },
+];
 const theme = createTheme();
 let n = 1;
 
@@ -41,7 +39,7 @@ export default function Courses() {
                             Student Courses
                         </Typography>
                         <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                            Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don&apos;t simply skip over it entirely.
+                            Check out the courses that we offer to the students in different branches and fields of study
                         </Typography>
                     </Container>
                 </Box>
@@ -62,9 +60,9 @@ export default function Courses() {
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
                                         <Typography gutterBottom variant="h5" component="h2">
-                                            Heading
+                                            {card.course}
                                         </Typography>
-                                        <Typography>This is a media card. You can use this section to describe the content.</Typography>
+                                        <Typography>{card.description}</Typography>
                                     </CardContent>
                                     <CardActions>
                                         {/* <Button size="small">View</Button> */}
@@ -93,22 +91,9 @@ export default function Courses() {
                                 />
                                 <CardContent sx={{ flexGrow: 1 }}>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Mr Faculty
+                                        {cards[0].course}
                                     </Typography>
-                                    <Typography>
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                    </Typography>
+                                    <Typography>{cards[0].description}</Typography>
                                 </CardContent>
                             </Card>
                         </Grid>
@@ -126,22 +111,9 @@ export default function Courses() {
                                 />
                                 <CardContent sx={{ flexGrow: 1 }}>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Mr Faculty
+                                        {cards[1].course}
                                     </Typography>
-                                    <Typography>
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                    </Typography>
+                                    <Typography>{cards[1].description}</Typography>
                                 </CardContent>
                             </Card>
                         </Grid>
@@ -159,22 +131,9 @@ export default function Courses() {
                                 />
                                 <CardContent sx={{ flexGrow: 1 }}>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Mr Faculty
+                                        {cards[2].course}
                                     </Typography>
-                                    <Typography>
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                        This is a media card. You can use this section to describe the content.
-                                        <br />
-                                    </Typography>
+                                    <Typography>{cards[2].description}</Typography>
                                 </CardContent>
                             </Card>
                         </Grid>

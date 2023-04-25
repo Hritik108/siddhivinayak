@@ -141,23 +141,22 @@ class Navbar extends React.Component {
         </div>
       );
     }
+        function openNav() {
+            jQuery(".menu-sidebar").css({
+                width: "300px",
+                borderWidth: "0px 2px 0px 0px",
+            });
+            jQuery("body").css({ marginLeft: "30px", Transition: ".5s" });
+        }
 
-    function openNav() {
-      jQuery(".menu-sidebar").css({
-        width: "300px",
-        borderWidth: "0px 2px 0px 0px",
-      });
-      jQuery("body").css({ marginLeft: "30px", Transition: ".5s" });
+        function closeNav() {
+            jQuery(".menu-sidebar").css({
+                width: "0%",
+                borderWidth: "0px 0px 0px 0px",
+            });
+            jQuery("body").css({ marginLeft: "0%", Transition: ".5s" });
+        }
     }
-
-    function closeNav() {
-      jQuery(".menu-sidebar").css({
-        width: "0%",
-        borderWidth: "0px 0px 0px 0px",
-      });
-      jQuery("body").css({ marginLeft: "0%", Transition: ".5s" });
-    }
-  }
 }
 
 export default Navbar;
