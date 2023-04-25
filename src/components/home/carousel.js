@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import Education from "../Courses/Courses.images/education.jpg";
+import Classes from "../../assets/images/classes.jpg"
 import "bootstrap/dist/css/bootstrap.min.css";  
 
 function CarouselPage() {
@@ -11,7 +11,7 @@ function CarouselPage() {
               <figure>
                 <img
                   className="vh-100 vw-100"
-                  src={Education}
+                  src={Classes}
                   alt="First slide"
                 />
               </figure>
@@ -23,7 +23,7 @@ function CarouselPage() {
             <Carousel.Item>
               <img
                 className="vh-100 vw-100"
-                src={Education}
+                src={Classes}
                 alt="Second slide"
               />
               <Carousel.Caption>
@@ -34,7 +34,7 @@ function CarouselPage() {
             <Carousel.Item>
               <img
                 className="vh-100 vw-100"
-                src={Education}
+                src={Classes}
                 alt="Third slide"
               />
               <Carousel.Caption>

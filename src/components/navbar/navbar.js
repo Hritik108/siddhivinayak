@@ -82,6 +82,14 @@ class Navbar extends React.Component {
                 className={this.state.active === "home" ? "circle" : ""}
               ></div>
             </li>
+            <li class="dropdown">
+              <a href="#">Services</a>
+              <ul>
+                <li><a href="#">Service 1</a></li>
+                <li><a href="#">Service 2</a></li>
+                <li><a href="#">Service 3</a></li>
+              </ul>
+            </li>
             <li>
               <a href="/courses">Courses</a>
               <div

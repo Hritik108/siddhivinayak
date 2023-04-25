@@ -16,6 +16,38 @@
     margin-bottom: 100px;
 }
 
+.navbar-main ul li.dropdown {
+  position: relative;
+}
+
+.navbar-main ul li.dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.navbar-main ul li.dropdown:hover ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-main ul li.dropdown:hover ul li {
+  width: 8vw;
+  text-align: center;
+}
+
+.navbar-main ul li.dropdown:hover ul li a {
+  color: black;
+}
+
+
 .circle {
     width: 7px;
     height: 7px;
