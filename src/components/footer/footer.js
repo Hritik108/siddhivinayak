@@ -1,121 +1,123 @@
 import React, { Component } from "react";
 import "../../assets/css/footer.css";
 import {
-  FaRegEnvelope,
-  FaHome,
-  FaPhoneAlt,
-  FaFacebookSquare,
-  FaInstagram,
-  FaWhatsapp,
+    FaRegEnvelope,
+    FaHome,
+    FaPhoneAlt,
+    FaFacebookSquare,
+    FaInstagram,
+    FaWhatsapp,
 } from "react-icons/fa";
+import classesLogo from "../navbar/classesLogo.png";
 
 class Footer extends React.Component {
-  render() {
-    return (
-      <div className="footerContainer">
-        <div className="footerContent">
-          <div className="fixedWidth footerLogo">
-            <h1>This is logo</h1>
-            <p>
-              Siddhivinayak Classes guides and teaches their students with
-              different carrier opportunities and helps them excel in their
-              carriers
-            </p>
-            <div className="social">
-              <ul></ul>
-              <li>
-                <a>
-                  <FaFacebookSquare />
-                </a>
-              </li>
-              <li>
-                <a>
-                  <FaInstagram />
-                </a>
-              </li>
-              <li>
-                <a href="https://wa.me/9819285180">
-                  <FaWhatsapp />
-                </a>
-              </li>
+    render() {
+        return (
+            <div className="footerContainer">
+                <div className="footerContent">
+                    <div className="fixedWidth footerLogo">
+                        <img src={classesLogo} alt="classesLogo" width={200} />
+                        <p>
+                            Siddhivinayak Classes guides and teaches their
+                            students with different carrier opportunities and
+                            helps them excel in their carriers
+                        </p>
+                        <div className="social">
+                            <ul></ul>
+                            <li>
+                                <a>
+                                    <FaFacebookSquare />
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <FaInstagram />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/9819285180">
+                                    <FaWhatsapp />
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="fixedWidth usefulLinks">
+                        <h2>Useful Links</h2>
+                        <ul>
+                            <li>
+                                <a>Home</a>
+                            </li>
+                            <li>
+                                <a>Courses</a>
+                            </li>
+                            <li>
+                                <a>About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <div className="fixedWidth courses">
+                        <h2>Courses Offered</h2>
+                        <ul>
+                            <li>
+                                <a>XII - Science</a>
+                            </li>
+                            <li>
+                                <a>XII - Commerce</a>
+                            </li>
+                            <li>
+                                <a>XI - Science</a>
+                            </li>
+                            <li>
+                                <a>XI - Commerce</a>
+                            </li>
+                            <li>
+                                <p>
+                                    <b>State Board</b>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a>X</a>
+                                    </li>
+                                    <li>
+                                        <a>IX</a>
+                                    </li>
+                                    <li>
+                                        <a>VIII</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <div className="fixedWidth contactInfo">
+                        <h2>Contact</h2>
+                        <div className="contactDetails">
+                            <div className="icon">
+                                <FaHome />
+                            </div>
+                            <p>
+                                Shop No 6, Siddhivinayak Classes, Near Agar
+                                Bazar Bus Stop, Agar Bazaar, Dadar West, Mumbai
+                                - 400028
+                            </p>
+                        </div>
+                        <div className="contactDetails">
+                            <div className="icon">
+                                <FaRegEnvelope />
+                            </div>
+                            <p>abcxyz@gmail.com</p>
+                        </div>
+                        <div className="contactDetails">
+                            <FaPhoneAlt className="icon" />
+                            <p>+91 80827 72648</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <hr />
-          <div className="fixedWidth usefulLinks">
-            <h2>Useful Links</h2>
-            <ul>
-              <li>
-                <a>Home</a>
-              </li>
-              <li>
-                <a>Courses</a>
-              </li>
-              <li>
-                <a>About us</a>
-              </li>
-            </ul>
-          </div>
-          <hr />
-          <div className="fixedWidth courses">
-            <h2>Courses Offered</h2>
-            <ul>
-              <li>
-                <a>XII - Science</a>
-              </li>
-              <li>
-                <a>XII - Commerce</a>
-              </li>
-              <li>
-                <a>XI - Science</a>
-              </li>
-              <li>
-                <a>XI - Commerce</a>
-              </li>
-              <li>
-                <p>
-                  <b>State Board</b>
-                </p>
-                <ul>
-                  <li>
-                    <a>X</a>
-                  </li>
-                  <li>
-                    <a>IX</a>
-                  </li>
-                  <li>
-                    <a>VIII</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <hr />
-          <div className="fixedWidth contactInfo">
-            <h2>Contact</h2>
-            <div className="contactDetails">
-              <div className="icon">
-                <FaHome />
-              </div>
-              <p>
-                Shop No 6, Siddhivinayak Classes, Near Agar Bazar Bus Stop, Agar
-                Bazaar, Dadar West, Mumbai - 400028
-              </p>
-            </div>
-            <div className="contactDetails">
-              <div className="icon">
-                <FaRegEnvelope />
-              </div>
-              <p>abcxyz@gmail.com</p>
-            </div>
-            <div className="contactDetails">
-              <FaPhoneAlt className="icon" />
-              <p>+91 80827 72648</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+        );
+    }
 }
 
 export default Footer;

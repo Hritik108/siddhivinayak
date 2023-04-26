@@ -2,7 +2,7 @@ import React from "react";
 import "../../assets/css/navbar.css";
 import jQuery from "jquery";
 import Courses from "../Courses/Courses";
-
+import classesLogo from "./classesLogo.png";
 
 class Navbar extends React.Component {
     constructor(props) {
@@ -75,12 +75,16 @@ class Navbar extends React.Component {
             return (
                 <nav className="navbar-main">
                     <div>
-                        <h1>THIS IS LOGO</h1>
+                        <img src={classesLogo} alt="Classes Logo" width={70} />
                     </div>
                     <ul>
                         <li>
                             <a href="/home">Home</a>
-                            <div className={this.state.active === "home" ? "circle" : ""}></div>
+                            <div
+                                className={
+                                    this.state.active === "home" ? "circle" : ""
+                                }
+                            ></div>
                         </li>
                         <li className="dropdown">
                             <a href="#">Services</a>
@@ -104,15 +108,33 @@ class Navbar extends React.Component {
                         </li>
                         <li>
                             <a href="/courses">Courses</a>
-                            <div className={this.state.active === "courses" ? "circle" : ""}></div>
+                            <div
+                                className={
+                                    this.state.active === "courses"
+                                        ? "circle"
+                                        : ""
+                                }
+                            ></div>
                         </li>
                         <li>
                             <a href="/about">About Us</a>
-                            <div className={this.state.active === "about" ? "circle" : ""}></div>
+                            <div
+                                className={
+                                    this.state.active === "about"
+                                        ? "circle"
+                                        : ""
+                                }
+                            ></div>
                         </li>
                         <li>
                             <a href="/contact">Contact</a>
-                            <div className={this.state.active === "contact" ? "circle" : ""}></div>
+                            <div
+                                className={
+                                    this.state.active === "contact"
+                                        ? "circle"
+                                        : ""
+                                }
+                            ></div>
                         </li>
                     </ul>
                 </nav>
