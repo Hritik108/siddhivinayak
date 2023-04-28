@@ -3,6 +3,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./courses.css";
 import { CardGroup, Card, Container, Row, Col, Button } from "react-bootstrap";
 
+
 //importing images
 import school from "../../assets/images/school.jpg";
 import college from "../../assets/images/college.png";
