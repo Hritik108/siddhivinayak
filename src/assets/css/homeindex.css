@@ -1,84 +1,82 @@
-.Home-page{
-    background-image: url("../../components/Courses/Courses.images/education.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:left;
+.Home-page {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
     background-attachment: fixed;
 }
-.index-main{
+.index-main {
     margin: 10% 10% 10% 10%;
     display: flex;
     height: 90vh;
 }
 
-.index-description{    
+.index-description {
     width: 90%;
 }
 
-.desc-main h1 strong{
+.desc-main h1 strong {
     color: red;
 }
 
-.desc-main h1{
-    color: #501B1D;
+.desc-main h1 {
+    color: #501b1d;
     font-size: 2em;
 }
 
-.desc-main h3{
-    color:#501B1D;
-    font-size: 3em; 
+.desc-main h3 {
+    color: #501b1d;
+    font-size: 3em;
 }
 
-.desc-sub{
+.desc-sub {
     margin-top: 3%;
     width: 50vw;
     font-size: 1.3em;
     line-height: 140%;
-    color: #501B1D;
+    color: #501b1d;
     text-align: justify;
 }
 
-.index-buttons{
+.index-buttons {
     margin-top: 50px;
 }
-.index-buttons a{
+.index-buttons a {
     text-decoration: none;
 }
 
-.index-buttons a:nth-child(2){
-   margin-left: 5%;
+.index-buttons a:nth-child(2) {
+    margin-left: 5%;
 }
 
-.index-image{
+.index-image {
     width: 80%;
     margin-top: 5%;
 }
 
-.MuiButtonBase-root{
+.MuiButtonBase-root {
     display: inline-flex !important;
 }
 
-.MuiButton-contained{
+.MuiButton-contained {
     color: white !important;
 }
 
-.index-image img{
+.index-image img {
     display: none;
     /* max-width: 100%; */
     border-radius: 10%;
     /* min-width: 100%; */
- /* margin-top: 10%; */
+    /* margin-top: 10%; */
 }
 
-
-@media only screen and (max-width:700px){
-    .desc-sub{
+@media only screen and (max-width: 700px) {
+    .desc-sub {
         width: 80vw;
     }
 }
 
-@media only screen and (max-width:450px){
-    .MuiButtonBase-root{
+@media only screen and (max-width: 450px) {
+    .MuiButtonBase-root {
         display: block !important;
         color: red;
     }

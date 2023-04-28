@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../../assets/css/contact.css";
 import { FaHome, FaPhoneAlt } from "react-icons/fa";
-import contact from "../../assets/images/contact.jpg";
+import contact from "../../assets/images/contact.jpeg";
 
 class Contact extends Component {
     render() {
