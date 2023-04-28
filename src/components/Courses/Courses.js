@@ -93,13 +93,14 @@ const theme = createTheme();
 let n = 1;
 
 function Courses_heading() {
-  return <img src={main} alt="" className="img-fluid" />;
+  return <img src={main} alt="" id="main-courses" className="img-fluid" />;
 }
 
 function Courses_cards() {
   return (
-    <div style={{ margin: "10% 0%" }}>
+    <div style={{ margin: "0% 0%" }}>
       <Row>
+        <h1 style={{ textAlign: "center", fontSize: "8vw" }}>Courses</h1>
         <Col>
           <CardGroup className="mx-auto" style={{ gap: "20px" }}>
             {courseDetails.courses.map((feature) => {
@@ -130,13 +131,63 @@ function Courses_cards() {
   );
 }
 
+function Courses_info() {
+  return (
+    <div class="row">
+      <div class="col-4">
+        <nav
+          id="navbar-example3"
+          class="h-100 flex-column align-items-stretch pe-4 border-end"
+        >
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#item-1">
+              SSC
+            </a>
+
+            <a class="nav-link" href="#item-2">
+              HSC
+            </a>
+            <a class="nav-link" href="#item-3">
+              Entrance
+            </a>
+          </nav>
+        </nav>
+      </div>
+
+      <div class="col-8">
+        <div
+          data-bs-spy="scroll"
+          data-bs-target="#navbar-example3"
+          data-bs-smooth-scroll="true"
+          class="scrollspy-example-2"
+          tabindex="0"
+        >
+          <div id="item-1">
+            <h4>SSC</h4>
+            <p>"Secondary School Certificate (SSC) is a public examination taken by students in Bangladesh, India, and Pakistan after successful completion of ten years of schooling."</p>
+          </div>
+
+          <div id="item-2">
+            <h4>HSC</h4>
+            <p>"Secondary School Certificate (SSC) is a public examination taken by students in Bangladesh, India, and Pakistan after successful completion of ten years of schooling."</p>
+          </div>
+          <div id="item-3">
+            <h4>Entrance</h4>
+            <p>"Secondary School Certificate (SSC) is a public examination taken by students in Bangladesh, India, and Pakistan after successful completion of ten years of schooling."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Courses() {
   return (
     <div>
       <Courses_heading />
-
       <Container>
         <Courses_cards />
+        <Courses_info />
       </Container>
     </div>
   );

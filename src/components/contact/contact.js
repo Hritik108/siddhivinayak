@@ -1,20 +1,24 @@
 import React, { Component } from "react";
 import "../../assets/css/contact.css";
 import { FaHome, FaPhoneAlt } from "react-icons/fa";
-import contact from "./contactImage.jpg";
+import contact from "../../assets/images/contact.jpg";
 
 class Contact extends Component {
     render() {
         return (
             <div id="contactHeader">
-                <img src={contact} alt="Contact Us Image" />
-                <div className="w-75 mx-auto py-5">
+                <img src={contact} alt="Contact Us Image" className="img-fluid" height={10} />
+                <div id="contact-main" className="container">
                     <strong className="contactTitle">
                         Get in touch with Us
                     </strong>
                     <div className="designBorder"></div>
                     <h3>
-                        Want to get in touch? We'd love to hear from you. Here's
+                        Want to get in touch? 
+                        <br />
+                    </h3>
+                    <h3>
+                        We'd love to hear from you. Here's
                         how you can reach us...
                     </h3>
                     <div className="py-4">

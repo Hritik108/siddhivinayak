@@ -109,10 +109,7 @@ a{
 
 }
 .navbar-menuB{
-    /* position: fixed; */
-    /* margin: 0% 3%; */
-    /* margin-top: -10%; */
-    height: 100%;
+    position: fixed;
     display: flex;
   }
   
