@@ -1,3 +1,18 @@
-#contactHeader {
-    margin: 150px 0;
+img {
+    max-width: 100%;
+    height: auto;
+}
+.contactTitle {
+    font-size: 4.5em;
+}
+.designBorder {
+    height: 3px;
+    width: 80px;
+    background-color: #e95a5b;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.contactIcons {
+    font-size: 1em;
+    margin: 0 1.5% 0 0;
 }

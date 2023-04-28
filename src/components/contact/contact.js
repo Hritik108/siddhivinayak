@@ -1,43 +1,53 @@
 import React, { Component } from "react";
 import "../../assets/css/contact.css";
 import { FaHome, FaPhoneAlt } from "react-icons/fa";
+import contact from "./contactImage.jpg";
 
 class Contact extends Component {
     render() {
         return (
             <div id="contactHeader">
+                <img src={contact} alt="Contact Us Image" />
                 <div className="w-75 mx-auto py-5">
-                    <h1 className="fs-1">Get in Touch</h1>
-                    <p>
+                    <strong className="contactTitle">
+                        Get in touch with Us
+                    </strong>
+                    <div className="designBorder"></div>
+                    <h3>
                         Want to get in touch? We'd love to hear from you. Here's
                         how you can reach us...
-                    </p>
-                    <div className="p-0">
+                    </h3>
+                    <div className="py-4">
                         <div className="d-flex">
-                            <FaPhoneAlt className="mt-1 me-2" />
+                            <FaPhoneAlt className="contactIcons" size={26} />
                             <h4>Phone</h4>
                         </div>
-                        <p className="my-1">
-                            <a href="tel:9819285180">+91 98192 85180</a>
-                        </p>
-                        <p className="me-1">
-                            <a href="tel:8082772648">+91 80827 72648</a>
-                        </p>
+                        <div className="my-3">
+                            <h5 className="me-1">
+                                <a href="tel:9819285180">+91 98192 85180</a>
+                            </h5>
+                            <h5 className="me-1">
+                                <a href="tel:8082772648">+91 80827 72648</a>
+                            </h5>
+                        </div>
                     </div>
                     <div>
                         <div className="d-flex">
-                            <FaHome className="mt-1 me-2" />
+                            <FaHome className="contactIcons" size={30} />
                             <h4>Address</h4>
                         </div>
-                        <p className="my-1">
-                            - Shop No 6, Siddhivinayak Classes, Near Agar Bazar
-                            Bus Stop, Agar Bazaar, Dadar West, Mumbai - 400028
-                        </p>
-                        <p className="my-1">
-                            - At Ratan, Shop No: 10, S.K. Bole Road, Agar
-                            Bazaar, Near Siddhivinayak Temple, Dadar West,
-                            Mumbai - 400028
-                        </p>
+                        <div className="my-3">
+                            <h5 className="my-1">
+                                - Shop No 6, Siddhivinayak Classes, Near Agar
+                                Bazar Bus Stop, Agar Bazaar, Dadar West, Mumbai
+                                - 400028
+                            </h5>
+                            <h5 className="my-1">
+                                - At Ratan, Shop No: 10, S.K. Bole Road, Agar
+                                Bazaar, Near Siddhivinayak Temple, Dadar West,
+                                Mumbai - 400028
+                            </h5>
+                        </div>
                     </div>
                 </div>
             </div>
