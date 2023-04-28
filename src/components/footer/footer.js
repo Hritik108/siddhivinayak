@@ -1,123 +1,157 @@
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import React, { Component } from "react";
-import "../../assets/css/footer.css";
-import {
-    FaRegEnvelope,
-    FaHome,
-    FaPhoneAlt,
-    FaFacebookSquare,
-    FaInstagram,
-    FaWhatsapp,
-} from "react-icons/fa";
-import classesLogo from "../navbar/classesLogo.png";
+import classesLogo from "../../assets/images/classesLogo.png";
+import "../../assets/css/_footer.css"
 
-class Footer extends React.Component {
-    render() {
-        return (
-            <div className="footerContainer">
-                <div className="footerContent">
-                    <div className="fixedWidth footerLogo">
-                        <img src={classesLogo} alt="classesLogo" width={200} />
-                        <p>
-                            Siddhivinayak Classes guides and teaches their
-                            students with different carrier opportunities and
-                            helps them excel in their carriers
-                        </p>
-                        <div className="social">
-                            <ul></ul>
-                            <li>
-                                <a>
-                                    <FaFacebookSquare />
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FaInstagram />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://wa.me/9819285180">
-                                    <FaWhatsapp />
-                                </a>
-                            </li>
-                        </div>
-                    </div>
-                    <hr />
-                    <div className="fixedWidth usefulLinks">
-                        <h2>Useful Links</h2>
-                        <ul>
-                            <li>
-                                <a>Home</a>
-                            </li>
-                            <li>
-                                <a>Courses</a>
-                            </li>
-                            <li>
-                                <a>About us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr />
-                    <div className="fixedWidth courses">
-                        <h2>Courses Offered</h2>
-                        <ul>
-                            <li>
-                                <a>XII - Science</a>
-                            </li>
-                            <li>
-                                <a>XII - Commerce</a>
-                            </li>
-                            <li>
-                                <a>XI - Science</a>
-                            </li>
-                            <li>
-                                <a>XI - Commerce</a>
-                            </li>
-                            <li>
-                                <p>
-                                    <b>State Board</b>
-                                </p>
-                                <ul>
-                                    <li>
-                                        <a>X</a>
-                                    </li>
-                                    <li>
-                                        <a>IX</a>
-                                    </li>
-                                    <li>
-                                        <a>VIII</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr />
-                    <div className="fixedWidth contactInfo">
-                        <h2>Contact</h2>
-                        <div className="contactDetails">
-                            <div className="icon">
-                                <FaHome />
-                            </div>
-                            <p>
-                                Shop No 6, Siddhivinayak Classes, Near Agar
-                                Bazar Bus Stop, Agar Bazaar, Dadar West, Mumbai
-                                - 400028
-                            </p>
-                        </div>
-                        <div className="contactDetails">
-                            <div className="icon">
-                                <FaRegEnvelope />
-                            </div>
-                            <p>abcxyz@gmail.com</p>
-                        </div>
-                        <div className="contactDetails">
-                            <FaPhoneAlt className="icon" />
-                            <p>+91 80827 72648</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
+export default function Footer() {
+	return (
+		<footer className="footer-wrapper">
+			<div className="footer-widgets-wrapper">
+				<div className="container">
+					<div className="row">
+						<div className="col-xl-3 col-lg-4 col-md-6 col-12">
+							<div className="single-footer-widget wow fadeInLeft">
+								<div className="about-us-widget">
+									<a href="/">
+										<a className="footer-logo d-block">
+                                        <img src={classesLogo} alt="Classes Logo" width={100} />
+										</a>
+									</a>
+									<p>
+										Xmoze helps millions of people get the best Wordpress theme design and offers
+										software reviews, ratings, comprehensive services.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-xl-2 col-lg-3 offset-xl-1 col-md-6 col-12">
+							<div className="single-footer-widget wow fadeInLeft" data-wow-delay=".2s">
+								<div className="widget-title">
+									<h5>Company</h5>
+								</div>
+								<ul>
+									<li>
+										<a href="/about">
+											<a>About xmoze</a>
+										</a>
+									</li>
+									<li>
+										<a href="/contact">
+											<a>Contact & support</a>
+										</a>
+									</li>
+									<li>
+										<a href="/#">
+											<a>Setting & privacy</a>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<a>Setting & privacy</a>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div className="col-xl-2 col-lg-3 offset-xl-1 col-md-6 col-12">
+							<div className="single-footer-widget wow fadeInLeft" data-wow-delay=".4s">
+								<div className="widget-title">
+									<h5>Services</h5>
+								</div>
+								<ul>
+									<li>
+										<a href="#">
+											<a>Incident responder</a>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<a>Secure managed IT</a>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<a>Check website Url</a>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<a>Locker security</a>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div className="col-xl-2 col-lg-3 offset-xl-1 col-md-6 col-12">
+							<div className="single-footer-widget wow fadeInLeft" data-wow-delay=".6s">
+								<div className="widget-title">
+									<h5>Resources</h5>
+								</div>
+								<ul>
+									<li>
+										<a href="#">
+											<a>Payment plans</a>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<a>Blogs & guides</a>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<a>Premium support</a>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<a>Our products</a>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="footer-bottom-wrapper">
+				<div className="container">
+					<div className="footer-bottom-content d-md-flex justify-content-between">
+						<div className="site-copyright wow fadeInUp" data-wow-delay=".2" data-wow-duration="1s">
+							<p>
+								&copy; 2022{" "}
+								<a href="#">
+									<a>Xmooze Theme</a>
+								</a>{" "}
+								All Rights Reserved.
+							</p>
+						</div>
+						<div
+							className="social-as mt-4 mt-md-0 wow fadeInUp"
+							data-wow-delay=".3"
+							data-wow-duration="1s"
+						>
+							<a href="#">
+								<a>
+									<FaFacebookF />
+								</a>
+							</a>
+							<a href="#">
+								<a>
+									<FaTwitter />
+								</a>
+							</a>
+							<a href="#">
+								<a>
+									<FaInstagram />
+								</a>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	);
 }
 
-export default Footer;
+

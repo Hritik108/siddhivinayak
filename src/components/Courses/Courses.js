@@ -3,7 +3,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./courses.css";
 import { CardGroup, Card, Container, Row, Col, Button } from "react-bootstrap";
 
-
 //importing images
 import school from "../../assets/images/school.jpg";
 import college from "../../assets/images/college.png";
@@ -94,18 +93,12 @@ const theme = createTheme();
 let n = 1;
 
 function Courses_heading() {
-  return (
-    <img
-      src={main}
-      alt=""
-      className="img-fluid"
-    />
-  );
+  return <img src={main} alt="" className="img-fluid" />;
 }
 
 function Courses_cards() {
   return (
-    <div>
+    <div style={{ margin: "10% 0%" }}>
       <Row>
         <Col>
           <CardGroup className="mx-auto" style={{ gap: "20px" }}>
@@ -113,7 +106,6 @@ function Courses_cards() {
               return (
                 <Card
                   border="dark"
-                  
                   style={{
                     borderWidth: "0px",
                   }}
@@ -141,12 +133,11 @@ function Courses_cards() {
 export default function Courses() {
   return (
     <div>
-        <Courses_heading />
-    
-    <Container >
-      
-      <Courses_cards />
-    </Container>
+      <Courses_heading />
+
+      <Container>
+        <Courses_cards />
+      </Container>
     </div>
   );
 }
