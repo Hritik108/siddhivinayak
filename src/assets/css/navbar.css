@@ -110,6 +110,7 @@ a{
 }
 .navbar-menuB{
     position: fixed;
+
     display: flex;
   }
   
