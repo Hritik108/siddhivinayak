@@ -3,7 +3,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./courses.css";
 import { CardGroup, Card, Container, Row, Col, Button } from "react-bootstrap";
 
-
 //importing images
 import school from "../../assets/images/school.jpg";
 import college from "../../assets/images/college.png";
@@ -11,28 +10,6 @@ import main from "../../assets/images/29493.jpg";
 
 let courseDetails = {
   title: "Special Features of Shree Siddhivinayak Classes for SSC Students",
-  features: [
-    {
-      featureTitle: "Experienced Faculty",
-      featureDescription:
-        "The institute has a team of highly experienced and dedicated faculty members who provide personalized attention to each student and help them improve their academic performance.",
-    },
-    {
-      featureTitle: "Comprehensive Study Material",
-      featureDescription:
-        "Shree Siddhivinayak Classes provides comprehensive study material that covers the entire SSC syllabus, including solved examples and practice questions.",
-    },
-    {
-      featureTitle: "Regular Assessments",
-      featureDescription:
-        "The institute conducts regular assessments, including mock tests and practice papers, to help students evaluate their progress and identify areas for improvement.",
-    },
-    {
-      featureTitle: "Doubt-solving Sessions",
-      featureDescription:
-        "Shree Siddhivinayak Classes conducts regular doubt-solving sessions, where students can clarify their doubts and get individual attention from the faculty.",
-    },
-  ],
   courses: [
     {
       id: "#h1",
@@ -144,6 +121,14 @@ function Courses_info() {
             <a class="nav-link" href="#item-1">
               SSC
             </a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#item-1-1">
+                Item 1-1
+              </a>
+              <a class="nav-link ml-3 my-1" href="#item-1-2">
+                Item 1-2
+              </a>
+            </nav>
 
             <a class="nav-link" href="#item-2">
               HSC
@@ -165,16 +150,28 @@ function Courses_info() {
         >
           <div id="item-1">
             <h4>SSC</h4>
-            <p>"Secondary School Certificate (SSC) is a public examination taken by students in Bangladesh, India, and Pakistan after successful completion of ten years of schooling."</p>
+            <p>
+              "Secondary School Certificate (SSC) is a public examination taken
+              by students in Bangladesh, India, and Pakistan after successful
+              completion of ten years of schooling."
+            </p>
           </div>
 
           <div id="item-2">
             <h4>HSC</h4>
-            <p>"Secondary School Certificate (SSC) is a public examination taken by students in Bangladesh, India, and Pakistan after successful completion of ten years of schooling."</p>
+            <p>
+              "Secondary School Certificate (SSC) is a public examination taken
+              by students in Bangladesh, India, and Pakistan after successful
+              completion of ten years of schooling."
+            </p>
           </div>
           <div id="item-3">
             <h4>Entrance</h4>
-            <p>"Secondary School Certificate (SSC) is a public examination taken by students in Bangladesh, India, and Pakistan after successful completion of ten years of schooling."</p>
+            <p>
+              "Secondary School Certificate (SSC) is a public examination taken
+              by students in Bangladesh, India, and Pakistan after successful
+              completion of ten years of schooling."
+            </p>
           </div>
         </div>
       </div>

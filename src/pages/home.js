@@ -8,7 +8,7 @@ class HomePage extends React.Component {
     return (
       <div>
         <Homeindex />
-        <CarouselPage />
+        {/* <CarouselPage /> */}
         <Testimonial />
       </div>
     );
