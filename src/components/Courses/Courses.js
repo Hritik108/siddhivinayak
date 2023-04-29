@@ -10,6 +10,28 @@ import main from "../../assets/images/29493.jpg";
 
 let courseDetails = {
   title: "Special Features of Shree Siddhivinayak Classes for SSC Students",
+  features: [
+    {
+      featureTitle: "Experienced Faculty",
+      featureDescription:
+        "The institute has a team of highly experienced and dedicated faculty members who provide personalized attention to each student and help them improve their academic performance.",
+    },
+    {
+      featureTitle: "Comprehensive Study Material",
+      featureDescription:
+        "Shree Siddhivinayak Classes provides comprehensive study material that covers the entire SSC syllabus, including solved examples and practice questions.",
+    },
+    {
+      featureTitle: "Regular Assessments",
+      featureDescription:
+        "The institute conducts regular assessments, including mock tests and practice papers, to help students evaluate their progress and identify areas for improvement.",
+    },
+    {
+      featureTitle: "Doubt-solving Sessions",
+      featureDescription:
+        "Shree Siddhivinayak Classes conducts regular doubt-solving sessions, where students can clarify their doubts and get individual attention from the faculty.",
+    },
+  ],
   courses: [
     {
       id: "#h1",
@@ -71,42 +93,49 @@ const theme = createTheme();
 let n = 1;
 
 function Courses_heading() {
-  return <img src={main} alt="" id="main-courses" className="img-fluid" />;
+    return <img src={main} alt="" id="main-courses" />;
 }
 
 function Courses_cards() {
-  return (
-    <div style={{ margin: "0% 0%" }}>
-      <Row>
-        <h1 style={{ textAlign: "center", fontSize: "8vw" }}>Courses</h1>
-        <Col>
-          <CardGroup className="mx-auto" style={{ gap: "20px" }}>
-            {courseDetails.courses.map((feature) => {
-              return (
-                <Card
-                  border="dark"
-                  style={{
-                    borderWidth: "0px",
-                  }}
-                >
-                  <Card.Img
-                    variant="top"
-                    src={feature.image}
-                    className="img-fluid"
-                  />
-                  <Card.Body>
-                    <Card.Title>{feature.course}</Card.Title>
-                    <Card.Text>{feature.description}</Card.Text>
-                    <Button variant="dark">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              );
-            })}
-          </CardGroup>
-        </Col>
-      </Row>
-    </div>
-  );
+    return (
+        <div style={{ margin: "0% 0%" }}>
+            <Row>
+                <h1 style={{ textAlign: "center", fontSize: "8vw" }}>
+                    Courses
+                </h1>
+                <Col>
+                    <CardGroup className="mx-auto" style={{ gap: "20px" }}>
+                        {courseDetails.courses.map((feature) => {
+                            return (
+                                <Card
+                                    border="dark"
+                                    style={{
+                                        borderWidth: "0px",
+                                    }}
+                                >
+                                    <Card.Img
+                                        variant="top"
+                                        src={feature.image}
+                                    />
+                                    <Card.Body>
+                                        <Card.Title>
+                                            {feature.course}
+                                        </Card.Title>
+                                        <Card.Text>
+                                            {feature.description}
+                                        </Card.Text>
+                                        <Button variant="dark">
+                                            Go somewhere
+                                        </Button>
+                                    </Card.Body>
+                                </Card>
+                            );
+                        })}
+                    </CardGroup>
+                </Col>
+            </Row>
+        </div>
+    );
 }
 
 function Courses_info() {
@@ -121,24 +150,16 @@ function Courses_info() {
             <a class="nav-link" href="#item-1">
               SSC
             </a>
-            <nav class="nav nav-pills flex-column">
-              <a class="nav-link ml-3 my-1" href="#item-1-1">
-                Item 1-1
-              </a>
-              <a class="nav-link ml-3 my-1" href="#item-1-2">
-                Item 1-2
-              </a>
-            </nav>
 
-            <a class="nav-link" href="#item-2">
-              HSC
-            </a>
-            <a class="nav-link" href="#item-3">
-              Entrance
-            </a>
-          </nav>
-        </nav>
-      </div>
+                        <a class="nav-link" href="#item-2">
+                            HSC
+                        </a>
+                        <a class="nav-link" href="#item-3">
+                            Entrance
+                        </a>
+                    </nav>
+                </nav>
+            </div>
 
       <div class="col-8">
         <div
@@ -150,28 +171,16 @@ function Courses_info() {
         >
           <div id="item-1">
             <h4>SSC</h4>
-            <p>
-              "Secondary School Certificate (SSC) is a public examination taken
-              by students in Bangladesh, India, and Pakistan after successful
-              completion of ten years of schooling."
-            </p>
+            <p>"Secondary School Certificate (SSC) is a public examination taken by students in Bangladesh, India, and Pakistan after successful completion of ten years of schooling."</p>
           </div>
 
           <div id="item-2">
             <h4>HSC</h4>
-            <p>
-              "Secondary School Certificate (SSC) is a public examination taken
-              by students in Bangladesh, India, and Pakistan after successful
-              completion of ten years of schooling."
-            </p>
+            <p>"Secondary School Certificate (SSC) is a public examination taken by students in Bangladesh, India, and Pakistan after successful completion of ten years of schooling."</p>
           </div>
           <div id="item-3">
             <h4>Entrance</h4>
-            <p>
-              "Secondary School Certificate (SSC) is a public examination taken
-              by students in Bangladesh, India, and Pakistan after successful
-              completion of ten years of schooling."
-            </p>
+            <p>"Secondary School Certificate (SSC) is a public examination taken by students in Bangladesh, India, and Pakistan after successful completion of ten years of schooling."</p>
           </div>
         </div>
       </div>
@@ -180,15 +189,15 @@ function Courses_info() {
 }
 
 export default function Courses() {
-  return (
-    <div>
-      <Courses_heading />
-      <Container>
-        <Courses_cards />
-        <Courses_info />
-      </Container>
-    </div>
-  );
+    return (
+        <div>
+            <Courses_heading />
+            <Container>
+                <Courses_cards />
+                <Courses_info />
+            </Container>
+        </div>
+    );
 }
 
 // <div className="d-flex row mx-auto w-75 text-center mb-3">
